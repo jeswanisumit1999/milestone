@@ -71,19 +71,19 @@
 		<repository>
 			<id>release</id>
 			<name>releases</name>
-			<url>http://localhost:8082/artifactory/cust-local-release/</url>
+			<url>http://localhost:8081/artifactory/libs-release-local</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshot</id>
 			<name>snapshots</name>
-			<url>http://localhost:8082/artifactory/cust-local-snapshot/</url>
+			<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 
 	<scm>
-		<connection>git@github.com:souravcoder99/milestone.git</connection>
-		<developerConnection>git@github.com:souravcoder99/milestone.git</developerConnection>
-		<url>git@github.com:souravcoder99/milestone.git</url>
+		<connection>scm:git:git@github.com:nandudemy/devops.git</connection>
+		<developerConnection>scm:git:git@github.com:nandudemy/devops.git</developerConnection>
+		<url>git@github.com:nandudemy/devops.git</url>
 		<tag>HEAD</tag>
 	</scm>
 
