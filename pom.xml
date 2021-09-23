@@ -38,6 +38,12 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -70,8 +76,22 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
+	
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>3.13.0</version>
+				<configuration>
+					<linkXRef>false</linkXRef>
+					<targetJdk>11</targetJdk>
+					<sourceEncoding>utf-8</sourceEncoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+	
 	<distributionManagement>
 		<repository>
 			<id>release</id>
@@ -91,7 +111,5 @@
 		<url>git@github.com:nandudemy/devops.git</url>
 		<tag>HEAD</tag>
 	</scm>
-
-
 
 </project>
