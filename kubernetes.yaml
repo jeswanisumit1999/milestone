@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: customer-data
-        image: 9881715178/new-demo:latest
+        image: d1247/customer-data
         ports:
         - containerPort: 8080
 
